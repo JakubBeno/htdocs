@@ -1,0 +1,11 @@
+-- Active: 1700938322772@@127.0.0.1@3306@knihy
+CREATE DATABASE knihy DEFAULT CHARSET utf8mb4;
+CREATE TABLE seznamKnih (
+    id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    nazev VARCHAR(255) NOT NULL,
+    autor VARCHAR(255) NOT NULL,
+    zanr VARCHAR(255) NOT NULL,
+    popis TEXT
+);
+DROP TABLE seznamKnih;
+DESC seznamKnih;
